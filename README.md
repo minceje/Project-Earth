@@ -1,3 +1,3 @@
 # Project-Earth
-COSC 480 major project 
-Karl :)
+COSC 480 major project
+@author Jennifer Mince, Karl Maier
