@@ -1,3 +1,3 @@
 # Project-Earth
 COSC 480 major project
-@author Jennifer Mince, Karl Maier, Wesley Merrick
+@author Jennifer Mince, Karl Maier, Wesley Merrick, Toby Duncan
