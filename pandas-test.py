@@ -3,24 +3,27 @@ import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn import linear_model
 
+# can easily change the file names here
 sl = pd.read_csv('5yrSeaLevel.csv')
 avg = pd.read_csv('5yrAvg.csv')
 
+# use data from the first column (ALA region) in each file, again this can be changed here
 sl_list = sl[sl.columns[0]].tolist()
 avg_list = avg[avg.columns[0]].tolist()
 
-# sl_list = sl_list[0:200]
-# avg_list = avg_list[0:200]
-
+# convert floats to ints for the classifier (may not be needed with different algorithms)
 sl_list = [int(i * 100) for i in sl_list]
 avg_list = [int(j * 100) for j in avg_list]
 
+# convert to 1D numpy arrays for use in training models
 avg_arr = np.array(avg_list).reshape(-1, 1)
 sl_arr = np.array(sl_list).ravel()
 
+# take the first 200 data points to use as our training set
 x_train = avg_arr[:200]
 y_train = sl_arr[:200]
 
+# the last ~20 points become out testing set (we can change this separation as well)
 x_test = avg_arr[200:]
 y_test = sl_arr[200:]
 
