@@ -6,11 +6,6 @@ Created on Tue Apr 25 22:36:46 2017
 @author: karlmaier
 """
 
-"""
-Created on Wed Apr 19 14:06:01 2017
-
-@author: karlmaier
-"""
 #imports un order to read in data, plot, and linear regression 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -20,6 +15,7 @@ from sklearn import linear_model
 #using pandas, reda in the csv
 sl = pd.read_csv('CSV Data Set Files for Code/ACI - SL.csv')#read in the sea level csv from our csv folder 
 other = pd.read_csv('CSV Data Set Files for Code/ACI - CDD.csv')#read in the cdd csv from csv folder 
+
 
 for j in range(4):# for loop that loops through the every season of each year
     for i in range(13):# for loop that loops through the entire list of regions for every season since it is within the season for loop
