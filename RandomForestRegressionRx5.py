@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 from sklearn import linear_model
 from sklearn.ensemble import RandomForestRegressor
 
+#Can be used for every file, just need to change the file names below
 sl = pd.read_csv('CSV Data Set Files for Code/ACI - SL.csv')
 rx5 = pd.read_csv('CSV Data Set Files for Code/ACI - rx5.csv')
 
@@ -24,31 +25,26 @@ for j in range(4): #go through every season
         xo1 = sl_list[j::4]
         yo1 = rx5_list[j::4]
 
-        #linear regression
+       #builiding the random forest regressor
         x = np.array(xo1).reshape(-1,1)
         y = np.array(yo1).reshape(-1,1)
 
+        #train sets
         x_train = x[:-2]
         y_train = y[:-2]
 
+        #test sets
         x_test = x[-2:]
         y_test = y[-2:]
 
+        #declaring the actual Random Forest Regressor
         regr = RandomForestRegressor()
 
+        #fitting the graphs to the sets
         regr.fit(x_train, y_train)
 
+        #Printing out the data as well as the graphs
         print("R-squared: " + str(list(rx5)[i+2]) + " " + str(regr.score(x_test,y_test)))
-
-        #print('Coefficients: ' + str(regr.coef_))
-
-        #pred = regr.predict([10])
-        #print 'Linear Regression ' + str(pred)
-
-        """plt.scatter(x, y, color='black')
-        plt.plot(x_test, regr.predict(x_test), color='blue', linewidth=3)
-        plt.show()
-"""
 
         plt.title(str(list(rx5)[i+2])+ " vs " + str(list(sl)[i+2]) + " Season " + str(j+1))
         plt.xlabel(str(list(rx5)[i+2]))
