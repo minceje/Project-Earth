@@ -15,7 +15,6 @@ from sklearn.ensemble import RandomForestRegressor
 
 sl = pd.read_csv('CSV Data Set Files for Code/ACI - SL.csv')
 rx5 = pd.read_csv('CSV Data Set Files for Code/ACI - rx5.csv')
-colors = ['b','g','r','c','m','y','k', '#9033FF','#FB9513', '#92FB13','#3A5826','#89A9AC','#7A041D']
 
 for j in range(4): #go through every season
     for i in range(13): #go through every region
