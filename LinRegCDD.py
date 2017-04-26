@@ -6,11 +6,6 @@ Created on Tue Apr 25 22:36:46 2017
 @author: karlmaier
 """
 
-"""
-Created on Wed Apr 19 14:06:01 2017
-
-@author: karlmaier
-"""
 #imports un order to read in data, plot, and linear regression 
 import pandas as pd
 import matplotlib.pyplot as plt
