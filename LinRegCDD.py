@@ -18,8 +18,8 @@ import numpy as np
 from sklearn import linear_model
 
 
-sl = pd.read_csv('ACI - SL.csv')
-t10 = pd.read_csv('ACI - CDD.csv')
+sl = pd.read_csv('CSV Data Set Files for Code/ACI - SL.csv')
+t10 = pd.read_csv('CSV Data Set Files for Code/ACI - CDD.csv')
 colors = ['b','g','r','c','m','y','k', '#9033FF','#FB9513', '#92FB13','#3A5826','#89A9AC','#7A041D']
 
 for j in range(4):

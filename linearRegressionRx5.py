@@ -26,11 +26,11 @@ for j in range(4): #go through every season
         x = np.array(xo1).reshape(-1,1) #shape the data from linear regression
         y = np.array(yo1).reshape(-1,1)
 
-        x_train = x[:-2] #split data for training set
-        y_train = y[:-2]
+        x_train = x[:43] #split data for training set to be %20
+        y_train = y[:43]
 
-        x_test = x[-2:] #split data for testing set
-        y_test = y[-2:]
+        x_test = x[43:] #split data for testing set to be %80
+        y_test = y[43:]
 
         regr = linear_model.LinearRegression() #perform linear regression on training set
 
