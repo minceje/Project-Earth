@@ -27,15 +27,15 @@ for j in range(4): #go through every season
 
        #builiding the random forest regressor
         x = np.array(xo1).reshape(-1,1)
-        y = np.array(yo1).reshape(-1,1)
+        y = np.array(yo1).ravel()
 
-        #train sets
-        x_train = x[:-2]
-        y_train = y[:-2]
+        #Making train sets
+        x_train = x[:-43]
+        y_train = y[:-43]
 
-        #test sets
-        x_test = x[-2:]
-        y_test = y[-2:]
+        #Making test sets
+        x_test = x[-43:]
+        y_test = y[-43:]
 
         #declaring the actual Random Forest Regressor
         regr = RandomForestRegressor()
