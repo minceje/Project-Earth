@@ -27,7 +27,7 @@ for j in range(4): #go through every season
 
        #builiding the random forest regressor
         x = np.array(xo1).reshape(-1,1)
-        y = np.array(yo1).reshape(-1,1)
+        y = np.array(yo1).ravel()
 
         #Making train sets
         x_train = x[:-43]
