@@ -41,7 +41,7 @@
 	\par We found slight success when using the method of linear regression. We graphed first each of the following variables (cdd, rx5, t10, t90, and average) versus sea level for each region and season and then ran a linear regression method on each of these graphs. Positive $r^2$ values were found for some of these graphs but not all of them. We will discuss the largest $r^2$ values for \textquoteleft CDD vs SL', \textquoteleft Rx5 vs SL', \textquoteleft T10 vs SL', \textquoteleft T90 vs SL' and \textquoteleft AVG vs SL'. The largest $r^2$ value for \textquoteleft CDD vs SL' was found in winter of region USA with an $r^2$ value of $0.085$ (Figure: \ref{fig:LinearMaxCDD}). The largest $r^2$ value for \textquoteleft RX5 vs SL' was found in spring of region CWP with an $r^2$ value of $0.602$ (Figure: \ref{fig:LinearMaxRX5}). The largest $r^2$ value for \textquoteleft T10 vs SL' was found in winter of region SWP with an $r^2$ value of $0.19$ (Figure: \ref{fig:LinearMaxT10}). The largest $r^2$ value for \textquoteleft T90 vs SL' was found in winter of region CWP with an $r^2$ value of $0.081$ (Figure: \ref{fig:LinearMaxT90}). Lastly, the largest $r^2$ value for \textquoteleft AVG vs SL' was found in winter of region CEA an $r^2$ value of $0.086$ (Figure: \ref{fig:LinearMaxAVG})
 
 	
-	\begin{figure}[ht]
+	\begin{figure}[htbp]
 \centering 
 \begin{subfigure}{.5\textwidth}
 \centering
@@ -73,13 +73,23 @@
 \caption{$r^2 = 0.086$}
 \label{fig:LinearMaxAVG}
 \end{subfigure}
-\caption{\label{fig:example}Maximum Linear Regression $r^2$ Values}
+\caption{\label{fig:maxLinear}Maximum Linear Regression $r^2$ Values}
 \end{figure}
 
 \section* {Conclusion}
 \indent \par We found small, very specific correlations in the data between certain features and regions that contributed to the rise in sea level. 
 \par \textquotedblleft Seasonal variations in sea level can be caused by seasonal changes in temperature, seasonal changes in river runoff, or seasonal changes in wind" (Parker). We used seasonal consecutive dry days, rainfall, high temperatures, and low temperatures data to see how much the sea level varied be season. There are some difficulties in predicting future sea level rise. It is important to have data on interannual-to-decadal sea level variation (Parker). The phrase sea level or mean sea level (MSL) is used to describe the water level observations that have been averaged over some period, usually at least a month, so that the shorter period variations have been averaged out and can be viewed as oscillating about this mean sea level. \textquotedblleft Sea level is only a mean for a particular time period, and it varies over longer time periods, on a monthly, interannual, and longer basis. This variation in sea level is measured relative to the land. If the land sinks, it will appear that sea level is rising, and likewise if the land rises it will look like sea level is falling. Thus we refer to this as relative sea level" (Parker). These factors may be affecting the data we used through the Actuaries Climate Index that we did not take into account or did not have sufficient information on to correctly predict the changes in sea levels over seasons. 
-\par Our group understands that this research is important for the environment and those that may be affected. \textquotedblleft Sea level change is a topic of interest to a broad audience for the simple reason that it can influence people directly: around 200 million people live in coastal floodplains" (Milne). The significance and consequence of this topic motivated us to choose the Actuaries Climate Index data set. \textquotedblleft…it is important to analyze the contribution of these factors to estimate future changes in sea level, intensive studies have been performed. Comparison of the observed sea level rise and its estimation is called the sea level budget. Reducing the gap between these values has been a long challenge in the climate science" (MIMURA). We tried to take on a very important and challenging topic and did not get an exact answer to our overall question. In our graphs, the linear regression line can show how the feature affects sea level. For example, an increase in rainy days causes a rise in sea level, shown by a positive slope on the graph.
+\par Our group understands that this research is important for the environment and those that may be affected. \textquotedblleft Sea level change is a topic of interest to a broad audience for the simple reason that it can influence people directly: around 200 million people live in coastal floodplains" (Milne). The significance and consequence of this topic motivated us to choose the Actuaries Climate Index data set. \textquotedblleft…it is important to analyze the contribution of these factors to estimate future changes in sea level, intensive studies have been performed. Comparison of the observed sea level rise and its estimation is called the sea level budget. Reducing the gap between these values has been a long challenge in the climate science" (MIMURA). We tried to take on a very important and challenging topic and did not get an exact answer to our overall question. 
+	\par Although we may not have received the best results, we were able to make some conclusions using the graphs and linear regression we produced. Out of all the graphs we created when performing linear regression, we received five positive $r^2$ values for \textquoteleft CDD vs SL', 12 for \textquoteleft Rx5 vs SL', 8 for \textquoteleft T10 vs SL', 3 for \textquoteleft T90 vs SL' and 4 for \textquoteleft AVG vs SL'. We have shown the best from each category in Figure \ref{fig:maxLinear}. The fact that there were many more regions with positive $r^2$ values for RX5 shows that sea level is affected more by rainy days than dry days, low temperatures, high temperatures, and the average of all of them. Also, the number of positive $r^2$ values for T10 was relatively high and shows that lower temperature had a large impact on sea level. From this, we can also conclude that T90 had the smallest impact on sea level than any of the other variables that were tested against sea level. 
+	\par Also, in our graphs, the linear regression line can show how a specific feature affects sea level. For example, the graph seen in Figure: \ref{fig:LinearMaxCDD} contains a negatively sloped linear regression line. This is also true with every other \textquoteleft CDD vs SL' graph that produced a positive $r^2$ value. This shows us that
+	
+	
+	
+	
+	
+	
+	
+	
 \par \textquotedblleft While the spatial variability of sea level change is a complicating factor when making predictions of future changes, it presents a unique opportunity to use observations of sea level changes to understand better the evolution of the climate system in the recent and distant past. This understanding underpins our ability to make accurate predictions of future changes" (Milne).
 
 \section* {Future Work}
